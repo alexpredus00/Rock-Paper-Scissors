@@ -4,9 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script> 
+    <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
 <body>
-    
+    <body style="background-color:#121212"></body>
+    <div class="container"> 
+        <div class="header">
+            <h1>Rock Paper Scissors</h1>
+        </div>
+        <div class="buttons">
+            <button onclick="game('rock')" class="button" type="button">Rock</button>
+            <button onclick="game('paper')"class="button" type="button">Paper</button>
+            <button onclick="game('scissor')"class="button" type="button">Scissors</button>
+        </div>
+        <div class="result">
+            <p id="resultDetails">Please choose one of the three options above.</p><br><br>
+            <div class="liveScore">
+                <h2>Player Score</h2>
+                <h2 id="score">0  -  0</h2>
+                <h2>Computer Score</h2>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
